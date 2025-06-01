@@ -25,7 +25,7 @@ jobs:
         run: aws s3 sync . s3://arjunthazhath-cloud-resume --delete
       
       - name: Invalidate Cloudfront cache
-        run: aws cloudfront create-invalidation --distribution-id E1VRF59LYKTBEN --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id E1VRF59LYKTBEN --paths "/index.html"
         env:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
