@@ -3,7 +3,11 @@
 ## ✅ What I Did
 
 ## DEMO VIDEO:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6SaSbUW_eGM?si=d_fwmRkyDCF9xfrq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## 🎥 Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/6SaSbUW_eGM/maxresdefault.jpg)](https://www.youtube.com/watch?v=6SaSbUW_eGM)
 
 ### 1. Created an S3 Bucket
 
