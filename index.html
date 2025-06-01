@@ -5,62 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arjun's Cloud Resume</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to right, #f8fafc, #e2e8f0);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      color: #1e293b;
+      padding: 20px;
     }
 
     .container {
-      background-color: #ffffff;
+      max-width: 800px;
+      margin: auto;
+      background: white;
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
       text-align: center;
-      max-width: 600px;
-      width: 90%;
+      margin-bottom: 30px;
     }
 
-    h1 {
-      color: #1e293b;
+    header h1 {
       font-size: 2.5rem;
-      margin-bottom: 20px;
+      margin: 0;
     }
 
-    p {
+    header p {
       font-size: 1.1rem;
-      color: #334155;
-      margin-bottom: 10px;
+      color: #475569;
     }
 
-    .emoji-line {
-      font-size: 5rem;
-      margin-top: 15px;
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
       color: #0f172a;
+      border-bottom: 2px solid #cbd5e1;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .emoji {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 10px;
     }
 
     @media (max-width: 600px) {
-      h1 {
+      .container {
+        padding: 20px;
+      }
+
+      header h1 {
         font-size: 2rem;
       }
 
-      p, .emoji-line {
-        font-size: 1rem;
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .emoji {
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Hello, I'm Arjun</h1>
-    <p>This is my cloud resume deployed using <strong>AWS S3</strong>, <strong>CloudFront</strong>, and <strong>GitHub Actions</strong>.</p>
-    <h1 class="emoji-line">I ❤️ CLOUD</h1>
-    <small>Disrupting the cloud industry is my dream</small>
+    <header>
+      <h1>Hello, I'm Arjun</h1>
+      <p>Aspiring Cloud & DevOps Engineer | Django Intern</p>
+      <div class="emoji">I ❤️ CLOUD</div>
+    </header>
+
+    <section>
+      <h2>🌐 Internship</h2>
+      <p>Currently working as a Django Intern at <strong>Assysntant</strong>, a Bangalore-based company. I contribute to backend development and REST API integration for cloud-based applications.</p>
+    </section>
+
+    <section>
+      <h2>🚀 DevOps & Cloud Projects</h2>
+      <ul>
+        <li><strong>Cloud Resume Challenge:</strong> Deployed static website using S3, CloudFront & GitHub Actions with cache invalidation automation.</li>
+        <li><strong>Containerized Web App:</strong> Flask app deployed on AWS EC2 using Docker & NGINX.</li>
+        <li><strong>CI/CD Pipeline:</strong> GitHub Actions pipeline integrated with AWS for automated testing and deployment.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>BSc (Hons), Computer Science</strong> – BITS Pilani (Online)</li>
+        <li>Specialization: Cloud Computing</li>
+        <li><strong>CBSE Class 12:</strong> Scored 96.8% in Commerce + Computer Science stream</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🏆 Achievements</h2>
+      <ul>
+        <li>Top 1% scorer in CBSE Board Exams</li>
+        <li>Contributed to multiple open-source Django projects</li>
+        <li>Hands-on experience with AWS S3, CloudFront, Route 53, IAM, GitHub Actions</li>
+      </ul>
+    </section>
+
+    <footer style="text-align: center; font-size: 0.9rem; color: #64748b;">
+      Built with ☁️ by Arjun
+    </footer>
   </div>
 </body>
 </html>
