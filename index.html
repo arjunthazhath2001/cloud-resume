@@ -35,6 +35,13 @@
     p {
       font-size: 1.1rem;
       color: #334155;
+      margin-bottom: 10px;
+    }
+
+    .emoji-line {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      color: #0f172a;
     }
 
     @media (max-width: 600px) {
@@ -42,7 +49,7 @@
         font-size: 2rem;
       }
 
-      p {
+      p, .emoji-line {
         font-size: 1rem;
       }
     }
@@ -52,6 +59,7 @@
   <div class="container">
     <h1>Hello, I'm Arjun</h1>
     <p>This is my cloud resume deployed using <strong>AWS S3</strong>, <strong>CloudFront</strong>, and <strong>GitHub Actions</strong>.</p>
+    <div class="emoji-line">I ❤️ the ☁️</div>
   </div>
 </body>
 </html>
